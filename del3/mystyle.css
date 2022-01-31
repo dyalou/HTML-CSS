@@ -1,0 +1,154 @@
+.floatRight {
+  float: right;
+  margin: 0 0 10px 20px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(192, 207, 228);
+  color: white;
+  text-align: center;
+}
+.intern-css {
+  color: orangered;
+  text-align: left;
+}
+.Hello {
+  color: purple;
+  text-align: left;
+}
+
+.färgenamne {
+  color: blue;
+}
+.kod {
+  color: #ff6347;
+}
+.imageh {
+  width: 128px;
+  height: 128px;
+  float: right;
+}
+.header1 {
+  padding: 3em;
+  text-align: center;
+  background-color: rgb(107, 196, 238);
+  color: azure;
+  font-size: 15px;
+}
+.hedearex {
+  text-align: left;
+  color: azure;
+}
+.footer1 {
+  text-align: center;
+  padding-bottom: 1em;
+  background-color: blue;
+  color: white;
+}
+.footnamne {
+  text-align: left;
+  color: white;
+}
+.mitten {
+  text-align: center;
+}
+.vänster {
+  text-align: left;
+}
+.höger {
+  text-align: right;
+}
+.inline {
+  text-align: center;
+  color: green;
+}
+.överline {
+  text-decoration: overline;
+}
+.linethrough {
+  text-decoration: line-through;
+}
+.myros {
+  background-color: rgb(241, 95, 168);
+  background-color: #92b435 !important;
+}
+.underline {
+  text-decoration: underline;
+}
+.font {
+  font-size: 10%;
+}
+.sektorex {
+  text-align: center;
+  color: green;
+}
+.dim {
+  list-style-type: square;
+}
+.styke1 {
+  text-align: center;
+  color: red;
+}
+.styke2 {
+  background-color: yellow;
+  text-align: left;
+  color: saddlebrown;
+}
+#stycke3 {
+  text-align: left;
+  color: seagreen;
+}
+.outside {
+  list-style-position: outside;
+}
+.inside {
+  list-style-position: inside;
+}
+.star {
+  list-style-image: url("csspages/image/star.jpg");
+  margin: 20px;
+}
+.dimo {
+  list-style-type: lower-roman;
+}
+#sektor2 {
+  text-align: center;
+  color: purple;
+}
+#redrose {
+  text-align: center;
+  background-color: pink;
+  background-image: url("csspages/image/nedladdning.jpg");
+}
+.indent {
+  text-indent: 50px;
+}
+.divex {
+  background-color: yellow;
+}
+.backfärge {
+  background-color: white;
+}
+h5 {
+  text-align: center;
+}
+.img {
+  display: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+h6 {
+  text-align: left;
+}
+.rose {
+  border: 10px solid blue;
+  padding: 30px;
+  width: 200px;
+  height: 250px;
+  text-align: justify;
+  color: red;
+}

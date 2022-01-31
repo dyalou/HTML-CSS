@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/024rose_114148.ico">
+    <title>formlär och labels</title>
+    <link rel="stylesheet" href="/mystyle.css">
+</head>
+<body>
+    <a  href="http://127.0.0.1:5500/htmlpages/HTML.html" target="_self">HTML-sidan</a>
+    <h2>HTML forms</h2>
+    Det HTML -formulär används för att samla in användarinmatning. Användarinmatningen skickas oftast till en server för bearbetning. var och en av formulär control har en namne den textfält där användaren skrivir i och värde av den alternativ som väljas som skickar också till serven<.br>
+
+    Den  &lt;form&gt;  element används för att skapa ett HTML -formulär för användarinmatning, och är en behållare för olika typer av inmatningselement, till exempel: textfält, checkboxes, radio knappar, submit-knappar etc.
+    Den &lt;input&gt; element är det mest använd element, Elementet kan visas på många sätt beroende på attribute typ.<br>
+    Den &lt;label&gt; element definerar en label för flera elementet som &lt;input type=" checkbox"&gt; , &lt;input type="color"&gt; ,&lt;input type=" radio"&gt; etc.<br>
+    Vi använder &lt;input type="text"&gt; för att fylla inmatningsfält med en rad för textinmatning.
+   Exemple på två inmatningsfält med användning av form element, observera att Om man klickar på knappen "submit" skickas formulärdata till en sida som heter "/action_page.php".
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Diana"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Lord"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+<h3>Text area</h3>
+&lt;textarea&gt; element användas för att skapa en textinmatning med flera rader. Till skillnad från andra detta är är int ett tomt element. Den bör därför ha en öppnings- och en stängande tagg.<br>
+<form>
+    <p>Vilka är din favorit mat och varför?</p>
+    <textarea namne="coments"cols="20" rows="4" > Enter your svar</textarea>
+</form>
+     
+<h3> Radio knapp:</h3>
+Med radio knappar &lt;input type="radio"&gt; kan en användare välja ett av ett begränsat antal val. Den namne attrbiute skickar till serven med värdet på det allternativ som användare väljer. När en fråga ger användarena alternativ för svar i form av alternativknappar, bör värdet på namnattributeet vara samma för alla alternativknappar som anväds för att svara på den frågan<br>
+"value" den value attribute på var och en av knapparna i en grupp bör vara olika (så att servern vet vilket alternativ användaren har valt).<br>
+"checked" den checked attribute kan användas för att ange vilket värde (om något) som ska väljas när sidan laddas. Värdet på detta attribute kontrolleras. Endast en alternativknapp i en grupp bör använda detta attribut.<br>
+Exemple på radio knapp:
+<p>Choose your favorite mat:</p>
+<form >
+      <input type="radio" id="Pasta" name="fav_Mat" value="Pasta">
+      <label for="Pasta">Pasta</label><br>
+      <input type="radio" id="Pizza" name="fav_Mat" value="Pizza">
+      <label for="Pizza">Pizza</label><br>
+      <input type="radio" id="Hamburgare" name="fav_MAt" value="Hamburgare">
+      <label for="Hamburgare">Hamburgare</label>
+    </form> 
+    <h3> Checkbox:</h3>
+    Den &lt;input type="chechbox"&gt; ge användare möjlight att välja ett eller flera alternativ som svar på en fråga. Den namne attribute skickas till servern med värdet för de alternativ som använaren väljer. När en fråga ger användarna alternativ för svar i form av kryssrutor, bör värdet på namne attributeet vara samma för alla knappar som svarar på den frågan. Den värde attributeet anger värdet som skickas till servern om den här kryssrutan är markerad.<br>
+    Exemple på checkbox:
+    <p>Snälla kan du välja vilken är din favorit mat:<br>
+    <form>
+        <input type= "checkbox" name="srvice "value="Pizza" checked="checked"/>Pizza
+        <input type= "checkbox" name="srvice "value="Pasta" checked="checked"/>Pasta
+        <input type= "checkbox" name="srvice "value="Hamburgare" checked="checked"/>Hamburgare
+    </p>
+    </form>
+    <h3>submit buttom:</h3>
+    Den &lt;input type="submit"&gt; är för att en användare skickar ett formulär till serven. Den Namne attribute kan användas men det behöver inte ha ett. Den värde attribute användas för att styra texten som visas på en knapp. 
+    Exemple:gå till page 343
+    <form>
+    <p action="http: http://127.0.0.1:5500/index.html/Prenumerar.php">Prenumerar på vår email list:</p> 
+    <input type="Text" name="email"/>
+    <input type="submit" name="Prenumerar" value="Prenumerar"/>
+</form>
+
+<h3> password input:</h3>
+Den &lt;input type="password"&gt;
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Christ"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Bonberg"><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form> 
+
+  <h3>input number:</h3>
+  Den &lt;input type="number"&gt; definierar ett numeriskt inmatningsfält. Du kan också ange begränsningar för vilka nummer som accepteras. här använder jag den label element följande med for attribute.
+    Följande exempel visar ett numeriskt inmatningsfält där du kan ange ett värde från 1 till 10:
+    <p>Du kan använda attributen min och max för att lägga till numeriska begränsningar i inmatningsfältet:</p>
+
+<form action="/action_page.php">
+  <label for="quantity">Quantity (between 1 and 10):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10">
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+</body>
+ 
+</html>

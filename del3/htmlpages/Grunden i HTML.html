@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/024rose_114148.ico">
+    <title>Grunden i HTML</title>
+</head>
+<body>
+  <a  href="http://127.0.0.1:5500/htmlpages/HTML.html" target="_self">HTML-sidan</a>
+       <h3>Grunden i HTML</h3>
+    HTML är en förkortning av "HyperText Markup Language".<br>HTML kod börjar inom taggen &lt;HTML&gt;.<br>
+        HTML kod består av två delar en head och en body. <br>&lt;head&gt; delen kan vi skriva alla information och instruktioer.<br>
+        Den &lt;head&gt;  elemntet är en behållare för följande element: &lt;head&gt;,&lt;title&gt; , &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;  och&lt;base&gt;.<br>
+        <ul>
+           <h4><li> Den HTML &lt;head&gt; element:</h4> är en behållare för meta data och placeras mellan &lt;html&gt; taggen och &lt;body&gt; taggen.</li>
+               HTML-metadata är data om HTML-dokumentet metadata visas inte. Metadata definierar vanligtvis dokumenttitel,teckenuppsättning,stilar, skript och annan metainformation.
+               <h4><li> Den HTML &lt;body&gt; element:</h4> definierar dokumentets kropp, och innehåller rubriker, stycken, bilder, tabeller, listor etc.<br>
+               <h4><li>Den HTML &lt;title&gt; element:</li></h4> Elmentet definierar dokumentets titel och krävs i HTML dokument.<br>
+                   Elmentet &lt;title&gt;:
+                    <ol>
+                       <li>definierar en titel i webbläsarens verktygsfält.</li>
+                       <li>ger en titel för sidan när den läggs till i favoriter</li>
+                       <li>visar en titel för sidan i sökmotorresultat</li>
+                       </ol>
+
+
+                       <h4><li>Den HTML &lt;style&gt; element:</li></h4>
+                           Elementet &lt;style&gt; används för att definiera stilinformation för en enda HTML -sida:
+
+
+                   <h4><li>Den HTML &lt;link&gt; Element:</li></h4>
+                   Elementet &lt;link&gt; definierar förhållandet mellan det aktuella dokumentet och en extern resurs.
+
+               <h4><li>Den HTML &lt;meta&gt; Element:</li></h4>
+               En &lt;meta&gt; tag som definierar meta data om ett HTML-dokument. Denna tag sitter i &lt;head&gt; element och kommer inte att visas på sidan.
+                Meta data användas av webbläsare (hur man visar innehållet eller laddar om sidan),sökmotor och andra webbtjänster.<br>
+                Elementet &lt;meta&gt; används vanligtvis för att ange teckenuppsättning, sidbeskrivning, nyckelord, dokumentförfattare och visningsportinställningar.
+        
+                &lt;body&gt; tag definierar dokumentets kropp och är en behållare för allt synligt innehåll, till exempel rubriker, stycken,bilder, listor etc.<br>
+        Exempel förklarat element:<br>
+       
+        <ul>
+            <li> &lt;!DOCTYPE html&gt; deklaration som definierar att detta dokument är ett HTML5- dokument.</li>
+            <li> &lt;html&gt;är en rotelementne på en HTML-sida.</li>
+          
+           
+            <li>&lt;h1&gt; element som definierar en stor rubrik.</li>
+            <li>&lt;p&gt; element definierar ett stycke.</li> 
+             <li>&lt;UTF-8&gt; är det mest använda sättet att representera unicode-text i webbsidor.</li> 
+          </ul>
+          
+            <h3>Mer HTML element:</h3>
+            <ul>
+           
+           <li>Element &lt;br&gt;  som infogar en enda radbrytning.</li>
+           <li>Element &lt;a&gt;  definierar en hyperlänk, som används för att länka från en sida till en annan. Det viktigaste attributet för  &lt;a&gt; -elementet är attributet href, som anger länkens destination.<br> 
+            Man kan länka till en webbsida, mail eller till en image link.</li>
+            <li> En &lt;em&gt; element som användas för att definiera betonad text. Innehållet i inuti visas vanligtvis i italic, 
+            exemple: En <em>Rose</em> </li>
+            <li>En &lt;i&gt; element difinerar en del av texten i en alternativstämning, innehållet visas vanligtvis i italic. Exemple:<p> En <i>röd ros</i> som odlas varje år. </p></li>
+            <li>En &lt;mark&gt;  element användas för att markera med highlighted text. Exemple:<p>En <mark>röd ros</mark> som odlas varje år.</p></li>
+            <li>En &lt;strong&gt; element som använd för att göra fettext. Exemple: En <strong>röd rose</strong> som odlas varje år.</p> </li>
+          </ul>
+            <h2>HTML kommentar:</h2>
+          <h4>HTML -kommentarstagg
+         Du kan lägga till kommentarer till din HTML -källa med följande syntax:</h4>
+         <h4>< !-- Write your comments here --></h4><br>
+         OBS!Kommentarer visas inte av webbläsaren, men de kan hjälpa till att dokumentera din HTML -källkod.<br>
+         Escape-sekvenser, t.ex. anvädar vi &lt; och för att skriva en krokodilkäft > på en webbsida.
+         <h2> HTML block och inline elements</h2>
+         Varje HTML -element har ett visa värde, beroende på vilken typ av element det är.
+          Det finns två visa värden: block och inline.
+          <h3>Block-level elements</h3>
+            Denna element börjar alltid på en ny rad. Ett block-level element tar alltid upp hela den tillgägliga bredden. Ett block element har en över och en nedre margin, medan ett inline element inte har det. 
+            Den  element är en block-level element.
+            <div style="border: 1px solid rgb(201, 39, 39)">DIV element</div><br>
+            Den &lt;div&gt; elementet användas ofta som en behållare för andra HTML-element. Elementet &lt;div&gt; har ingen obligatoriska attribute, men style, class och id är vanliga. När detta elementet användas tillsammans med CSS Kan elementet &lt;div&gt; användas för style innehållet av block.<br>
+            Det finns många block-level element i HTML här kommer några av dem:<br>
+            &lt;footer&gt; , &lt;table&gt; , &lt;header&gt; , &lt;form&gt; , &lt;section&gt; , &lt;article&gt; , &lt;h1&gt;-&lt;h6&gt; .
+            <h3>Inline element</h3>
+            Denna element startar inte på en ny rad. Ett inline element tar bara upp så mycket bredd som behövs. Här kommer några av inline element:
+            &lt;a&gt; , &lt;img&gt; , &lt;em&gt; , &lt;script&gt; , &lt;strong&gt;. <br>
+            Den  &lt;span&gt; elementet är ett inline-element och starta inte på en ny rad och tar bara upp så mycket bredd som behövs.
+    Example på inline element med span element:
+    <p>This is four themes<span style="border: 1px solid rgb(30, 15, 240)"> since, architecture, history and religion </span> which is necessary for learning in the schools.</p>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/image/024rose_114148.ico" />
+    <title>table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        height: 10px;
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://127.0.0.1:5500/htmlpages/HTML.html" target="_self"
+      >HTML-sidan</a
+    >
+    <h2>Table element i HTML</h2>
+    Den &lt;table&gt; tag definiera HTML table, som består av en &lt;table&gt;
+    eleement och en eller mer &lt;tr&gt;, &lt;th&gt; och &lt;td&gt; element.<br />
+    Den &lt;tr&gt; element definiera a table rad, den &lt;th&gt; består av ....
+    och den &lt;td&gt; element består av table cell.<br />
+    Du kan definierar du tabellceller som spänner över mer än en rad eller en
+    kolumn, med rowspan attribute och colspan attribute.<br /><br />
+    När man ska lägga till en kant i en tabell lägger du också till ramar runt
+    varje tabellcell. För att lägga till en kant, använd CSS egenskap border på
+    tabell-, th- och td -elementen, så alla tabller nedan har jag använd mig av
+    border egenskap i CSS intern.<br />
+    Med egenskapen border-style kan du fixa utseende av borden med groove ,
+    solid och dotted.
+
+    <br />
+    <h2>Tabellceller:</h2>
+    Varje tabellcell definieras av en &lt;tr&gt; och en &lt;/tr&gt; tagg.<br />
+    Example:
+    <table>
+      <tr>
+        <th></th>
+        <th>SVT</th>
+        <th>TV4</th>
+        <th>TV7</th>
+      </tr>
+    </table>
+    <br />
+    <h2>Tabellrader:</h2>
+    Varje tabellrad börjar med en &lt;tr&gt; och slutar med en &lt;/tr&gt;
+    -tagg.<br />
+    Example:
+    <table>
+      <tr>
+        <th>9:00 - 10:00</th>
+        <td rowspan="2">Movie</td>
+        <td>Godmorgon</td>
+        <td>Nyheter</td>
+      </tr>
+    </table>
+    <br />
+    Exemple på rowspan attribute:<br />
+    nedan ser vi en tabel med några TV channaler med bestämda tider , vi kan se
+    att SVT har en program som går från kl 9 till 11 medan TV4 har två olika
+    programer under samma tid.<br />
+    <br />
+    <table>
+      <tr>
+        <th></th>
+        <th>SVT</th>
+        <th>TV4</th>
+        <th>TV7</th>
+      </tr>
+      <tr>
+        <th>9:00 - 10:00</th>
+        <td rowspan="2">Movie</td>
+        <td>Godmorgon</td>
+        <td>Nyheter</td>
+      </tr>
+      <tr>
+        <th>10:00 - 11:00</th>
+        <td>Köket</td>
+        <td>En plats i solen</td>
+      </tr>
+    </table>
+    <br />
+    I den andra tabeln nedan ser vi den andra typen den colspan attribute ser vi
+    att en Cell som sträcker sig över två kolumner:<br />
+    Och den här tablen har en intern style med samma style funktion, den själva
+    tablen,cellen och raden har samma style separerade med kommatecken (table,
+    th, td ).<br />
+    <br />
+    <table>
+      <tr>
+        <th></th>
+        <th>9am</th>
+        <th>10am</th>
+        <th>11am</th>
+      </tr>
+      <tr>
+        <th>Måndag</th>
+        <td colspan="2">matematik</td>
+        <td>kemi</td>
+      </tr>
+      <tr>
+        <th>Tisdag</th>
+        <td colspan="2">biologi</td>
+        <td>idrot</td>
+      </tr>
+    </table>
+  </body>
+</html>
